@@ -1,55 +1,72 @@
 # 📧 Resilient Email Sending Service
 
-This is a resilient and fault-tolerant email sending service built using **TypeScript**. It simulates sending emails through two mock providers and handles failures gracefully with retry logic, fallback mechanisms, and rate limiting.
+![GitHub Repo Stars](https://img.shields.io/github/stars/omkarsnagre/email-service?style=social)  
+📌 **Technologies:** TypeScript, Node.js, Jest, ts-node, PowerShell  
 
 ---
 
-## ✅ Features
+## 🚀 Project Overview
 
-- 🔁 Retry mechanism with exponential backoff  
-- 🔄 Fallback to secondary provider on failure  
-- 🆔 Idempotency support (avoids duplicate sends)  
-- 🚦 Rate limiting (max 5 emails per minute)  
-- 📊 Email status tracking  
-- 🧪 Unit tests using Jest  
+This project is a **resilient email sending service** that simulates sending emails using two mock providers. Built with **TypeScript**, it features retry logic, fallback handling, rate limiting, and idempotent request handling — ensuring high reliability even under failure conditions.
 
 ---
 
-## 🚀 Getting Started
+## 🔹 Features
 
-### 1. Clone the repository
+✅ **Retry with Exponential Backoff** – Automatically retries failed sends with increasing delay.  
+✅ **Fallback Support** – Automatically uses a secondary provider if the primary one fails.  
+✅ **Idempotent Email Sending** – Prevents duplicate emails using unique idempotency keys.  
+✅ **Rate Limiting** – Limits to a maximum of 5 emails per minute.  
+✅ **Status Tracking** – Tracks every email attempt, provider used, success/failure, and timestamps.  
+✅ **Unit Testing with Jest** – All critical features covered with unit tests.  
 
+---
+
+## 📊 Impact & Results
+
+📌 **Zero duplicate emails** due to strict idempotency check.  
+📌 **Improved reliability** with retry + fallback strategy.  
+📌 **Simplified testing** using mock providers and Jest.  
+📌 **Ready for scale** with modular utilities (circuit breaker, logger, status tracker).
+
+---
+
+## 🛠 Installation & Setup
+
+### 📦 Install Dependencies
 ```bash
-git clone https://github.com/omkarsnagre/email-service.git
-cd email-service
+npm install
+```
 
-
-### 2. Install dependencies
-  ```bash 
- npm install
----
-
-### 3. Run the service
+### ▶️ Run the Service
 ```bash
 npm run start
+```
+
+### 🧪 Run Tests
+```bash
+npm run test
+```
 
 ---
 
-### 4. Run tests
-```bash
-npm run test
+## 📁 Project Structure
 
-### 🧪 Example Output
-```bash
-[ProviderA] Sending email to test@example.com
-Email status: {
-  provider: 'MockProviderA',
-  status: 'SUCCESS',
-  attempts: 1,
-  timestamp: 1752132639989
-}
-###👨‍💻 Author
-Built by Omkar Nagre
-📜 License
-This project is open-source and intended for educational and assessment use. give like this in one shot no breakdowns 
+- `src/EmailService.ts` – Core email logic with retry, fallback, rate limit, idempotency  
+- `src/providers/` – MockProviderA & MockProviderB with simulated success rates  
+- `src/utils/` – Optional helpers (CircuitBreaker, Logger, etc.)  
+- `tests/` – Jest unit test suite  
 
+---
+
+## 📩 Contact
+
+💻 Developed by **Omkar Nagre**  
+📧 Email: [omkarnagre777@gmail.com](mailto:omkarnagre777@gmail.com)  
+🔗 GitHub: [github.com/omkarsnagre](https://github.com/omkarsnagre)
+
+---
+
+## 📜 License
+
+This project is open-source and available for educational use.
