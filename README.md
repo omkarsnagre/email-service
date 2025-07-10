@@ -21,16 +21,24 @@ This is a resilient and fault-tolerant email sending service built using **TypeS
 
 ```bash
 git clone https://github.com/omkarsnagre/email-service.git
-cd email-service 
+cd email-service
+---
+
 ### 2. Install dependencies
   ```bash 
  npm install
+---
+
 ### 3. Run the service
 ```bash
 npm run start
+
+---
+
 ### 4. Run tests
 ```bash
 npm run test
+
 ### 🧪 Example Output
 ```bash
 [ProviderA] Sending email to test@example.com
