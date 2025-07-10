@@ -33,6 +33,12 @@ This project is a **resilient email sending service** that simulates sending ema
 
 ## 🛠 Installation & Setup
 
+### 🔧 Clone the Repository
+```bash
+git clone https://github.com/omkarsnagre/email-service.git
+cd email-service
+```
+
 ### 📦 Install Dependencies
 ```bash
 npm install
