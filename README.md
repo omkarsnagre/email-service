@@ -27,22 +27,22 @@ This is a resilient and fault-tolerant email sending service built with **TypeSc
 ---
 
 ## 📁 Folder Structure
-
-├── src
-│ ├── index.ts # Entry point
-│ ├── EmailService.ts # Main service logic
-│ ├── types.ts # Type definitions
-│ ├── providers/
-│ │ ├── MockProviderA.ts # Primary mock provider
-│ │ └── MockProviderB.ts # Secondary mock provider
-│ └── utils/
-│ ├── CircuitBreaker.ts # Optional bonus utility
-│ ├── Logger.ts # Optional logging utility
-│ ├── RateLimiter.ts # Rate limiter helper (if extracted)
-│ └── StatusTracker.ts # Status tracking helper (optional)
+📁 email-service/
+├── src/
+│   ├── index.ts              # Entry point
+│   ├── EmailService.ts       # Main service logic
+│   ├── types.ts              # Type definitions
+│   ├── providers/
+│   │   ├── MockProviderA.ts  # Primary mock provider
+│   │   └── MockProviderB.ts  # Secondary mock provider
+│   └── utils/
+│       ├── CircuitBreaker.ts # Bonus utility
+│       ├── Logger.ts         # Optional logging
+│       ├── RateLimiter.ts    # Rate limiter helper
+│       └── StatusTracker.ts  # Email status tracking
 ├── tests/
-│ └── EmailService.test.ts # Unit tests
-├── package.json
-├── tsconfig.json
-├── jest.config.js
-└── .gitignore
+│   └── EmailService.test.ts  # Unit tests
+├── jest.config.js            # Jest config
+├── package.json              # NPM config
+├── tsconfig.json             # TypeScript config
+└── .gitignore                # Git exclusions
