@@ -22,7 +22,7 @@ This is a resilient and fault-tolerant email sending service built using **TypeS
 ```bash
 git clone https://github.com/omkarsnagre/email-service.git
 cd email-service
----
+
 
 ### 2. Install dependencies
   ```bash 
